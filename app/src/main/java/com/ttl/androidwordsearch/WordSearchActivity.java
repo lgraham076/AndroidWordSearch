@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 public class WordSearchActivity extends AppCompatActivity {
 
@@ -19,6 +20,7 @@ public class WordSearchActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 //TODO
+                Toast.makeText(WordSearchActivity.this, "Click registered",Toast.LENGTH_SHORT).show();
             }
         });
     }
